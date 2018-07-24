@@ -1,0 +1,25 @@
+<h1>Tasks Manager</h1>
+<div class="main-container">
+  <% @tasks.each do |task| %>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1"><%= link_to task.title, task_path(task) %></label>
+    <%= link_to task_path(task),
+          method: :delete,
+          data: { confirm: "Are you sure?" } do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
+  </div>
+  <% end %>
+</div>
+
+<div class="addtask">
+  <%= link_to new_task_path do %>
+  <i class="fas fa-plus">Add a task</i>
+  <% end %>
+</div>
+<!-- link_to "something" path -->
+
+<!-- link_to path do -->
+<!-- everything inside is clickable -->
+<!-- end -->

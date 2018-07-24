@@ -1,0 +1,36 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url("http://fonts.googleapis.com/css?family=Varela");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+.form-check .form-check-inline {
+  display: flex;
+}
+h1, h2 {
+  font-size: 40px;
+  font-family: PT Sans;
+  margin-left: 33px;
+}
+i, p {
+  font-family: PT Sans;
+  margin-left: 33px;
+}
+.form-group {
+  margin-top: 76px;
+}
+.main-container {
+  margin-left: 38px;
+  font-size: 20px;
+}
+.addtask {
+  margin-left: 38px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.btn {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+}
